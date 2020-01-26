@@ -1,37 +1,57 @@
-
-//app var
-var app = {};
+// var app = {};
 
 (function($){
 	"use strict";
-
-
-/*************************
-  Predefined Variables
-*************************/
-
 	var $window = $(window),
 	$document = $(document);
+	$( function() {
+		$( "#datepickerDepart" ).datepicker();
+		$( "#datepickerArrivee" ).datepicker();
+		$( "#datepickerSoin" ).datepicker();
+	  } );
 
+	  $( function() {
+		$( "#speed" ).selectmenu();
+		$( "#files" ).selectmenu();
+		$( "#number" )
+		  .selectmenu()
+		  .selectmenu( "menuWidget" )
+		  .addClass( "overflow" );
+		$( "#salutation" ).selectmenu();
+	  } );
 
-	app.event = function () {
-
-		// $("#button").click(function(){
-
-		// 	$("#monCarre").animate({
-		// 		left:"200px",
-		// 		height:"300px",
-		// 		width:"300px",
-		// 		fontSize:"40px"
-		// 	},3000);
-
-		// });
-
-	}
-
-	//Document ready functions
-	$document.ready(function () {
-		app.event();
+	// munu-image//
+	$(function () {
+		$("#carte-Brasserie").click(function () {
+			$("#image-menu-two,#image-menu-three").hide();
+			$("#image-menu-one").toggle(1000);
+			$("#image-menu-one").animate({
+			margin:"3% 15% 0% 15%",
+			})
+	  });
 	});
-
+	$(function () {
+		$("#carte-degustation").click(function () {
+			$("#image-menu-one,#image-menu-three").hide();
+			$("#image-menu-two").toggle(1000);
+			$("#image-menu-two").animate({
+			margin:"3% 15% 0% 15%",
+			})
+	  });
+	});
+	$(function () {
+		$("#carte-Restaurant").click(function () {
+			$("#image-menu-one,#image-menu-two").hide();
+			$("#image-menu-three").toggle(1000);
+			$("#image-menu-three").animate({
+			margin:"3% 15% 0% 15%",
+			})
+	  });
+	});
+	$(function () {
+		$('#datetimepicker1').datetimepicker();
+	});
+  $( function() {
+    $( "#datepicker" ).datepicker();
+  } );
 })(jQuery);
