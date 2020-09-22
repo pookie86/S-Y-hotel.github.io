@@ -13,15 +13,15 @@ header.img-fluid w-70 {
 }
 /* header */
 /* background */
-.background-accueil {
-  background-image: url(/image/FROND-chambre.jpg);
+/* .background-accueil {
+  background-image: url(../image/back-chambre.jpg);
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
   background-position: center center;
   background-attachment: fixed;
-}
+} */
 /* background */
 h1 {
   text-align: center;
@@ -74,6 +74,34 @@ form {
 /* date */
 
 /* offer */
+
+.test {
+  background-image: url(../image/other.jpg);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.card {
+    -webkit-transition: all .3s ease; /* Safari and Chrome */
+  	-moz-transition: all .3s ease; /* Firefox */
+  	-o-transition: all .3s ease; /* IE 9 */
+  	-ms-transition: all .3s ease; /* Opera */
+  	transition: all .3s ease;
+  	position:relative;
+}
+
+.card:hover {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform:translateZ(0) scale(1.20); /* Safari and Chrome */
+  -moz-transform:scale(1.20); /* Firefox */
+  -ms-transform:scale(1.20); /* IE 9 */
+}
+
 .row {
   display: flex;
   justify-content: center;
@@ -95,24 +123,30 @@ form {
 }
 
 /* MAIN */
+#info {
+  /* text-shadow: 0px 0px 6px rgb(202, 162, 162); */
+  color: black;
+  font-weight: 500;
+}
+
 main {
   margin-bottom: 1.2em;
 }
+
 .chambre-multi {
   display: flex;
   justify-content: center;
   margin: auto;
   width: 70%;
 }
+
 #chambre-h2-p {
   margin-left: 1.5em;
   color: #29bfff;
   text-align: justify;
 }
-h4 {
-  margin: auto;
-  width: 80%;
-}
+
+
 /* MAIN */
 
 /* ------------ MENU ------------ */
