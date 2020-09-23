@@ -14,7 +14,7 @@ header.img-fluid w-70 {
 /* header */
 /* background */
 .background-accueil {
-  background-image: url(/image/FROND-c.jpg);
+  background-image: url(../image/FROND-c.jpg);
   max-height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -68,9 +68,7 @@ button a {
   border-radius: 25px 0 0 0;
   width: auto;
 }
-.tous-les-actus img:hover {
-  border: 5px solid#296fff;
-}
+
 /* avis */
 /* header */
 

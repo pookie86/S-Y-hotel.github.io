@@ -84,6 +84,7 @@ header {
 .background-about {
   height: 400px;
   object-fit: cover;
+  background-color: red;
 }
 
 .about {

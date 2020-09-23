@@ -13,7 +13,7 @@ header.img-fluid w-70 {
 }
 /* -----------------HEADER --------------- */
 .background-accueil {
-  background-image: url(/image/frond-site-hotel.jpg);
+  background-image: url(../image/frond-site-hotel.jpg);
   height: auto;
   background-repeat: no-repeat;
   background-size: cover;
@@ -25,6 +25,7 @@ header.img-fluid w-70 {
   width: 100%;
   font-size: 1.5em;
 }
+
 /* ------------ MENU ------------ */
 #navbarNav {
   font-size: 1.2em;
@@ -34,25 +35,22 @@ header.img-fluid w-70 {
 }
 /* section */
 .row {
-  display: flex;
-  justify-content: center;
+  /* display: flex;
+  justify-content: center; */
   width: 100%;
   text-align: center;
 }
+
 .tous-les-actus {
   text-align: center;
   margin: 25px;
 }
-.actus-button {
-  width: 300px;
-}
+
 .tous-les-actus img {
   border-radius: 25px 0 0 0;
   width: 110%;
 }
-.tous-les-actus img:hover {
-  border: 5px solid#296fff;
-}
+
 /* section */
 /* ----------- MENU FOOTER ----- */
 footer {
